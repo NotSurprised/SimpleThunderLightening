@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="4619465139101298" static="0" type="number">0</variable>
+        <event-block sid="8135245819954657">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8901377867216228" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="8468469164258093" type="Plane">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="7242087224617917" type="Text">
+                    <param id="0" name="Text">&quot;Score:&quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7654849906140853">
+            <conditions>
+                <condition id="0" name="On click" sid="7012795640973988" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8156162600189678" type="Plane">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729435303683061">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1281461117661683" type="Bullet">
+                    <param id="0" name="Object">Plane2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="7669042018020961" type="Plane2">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5310128600376584" type="Bullet">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8623306463263509" type="Bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="1742354853703374">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4692412510910226" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="1766558441793132" type="Plane2">
+                    <param id="0" name="Angle">random(360)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9128264591523429">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="9776624310848957" type="Plane2" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="5208957567310624" type="Plane2">
+                    <param id="0" name="X">Plane.X</param>
+                    <param id="1" name="Y">Plane.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4130101079217676">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8917392648020447" type="Plane2">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="7036858149643396" type="Plane2">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8915203108115438" type="Plane2" />
+                <action id="-10" name="Add to" sid="3267948504019299" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4297581080123827">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5347173826748077" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8695665449783666" type="System">
+                    <param id="0" name="Object to create">Plane2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">1400</param>
+                    <param id="3" name="Y">random(1024)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

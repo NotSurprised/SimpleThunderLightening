@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2lw6lzqvatktx</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="7472822394149361">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="9562538428878789">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Plane2" sid="8850615055320393">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="7531508028553821" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="3031962221675235">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1411866754587439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Plane2.png">
+                        <collision-poly>
+                            <point x="0.290984" y="0.288618" />
+                            <point x="0.5" y="0.195122" />
+                            <point x="0.991803" y="0.00813008" />
+                            <point x="0.713115" y="0.715447" />
+                            <point x="0.5" y="0.939024" />
+                            <point x="0.188525" y="0.813008" />
+                            <point x="0.0655738" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Explosion" sid="4200811760551187">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7451333490825333">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1190634756405234" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.466667" y="0.466667" />
+                            <point x="0.5" y="0.393333" />
+                            <point x="0.526667" y="0.473333" />
+                            <point x="0.613333" y="0.5" />
+                            <point x="0.586667" y="0.586667" />
+                            <point x="0.5" y="0.553333" />
+                            <point x="0.413333" y="0.586667" />
+                            <point x="0.386667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.18" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.673333" y="0.5" />
+                            <point x="0.68" y="0.68" />
+                            <point x="0.5" y="0.633333" />
+                            <point x="0.32" y="0.68" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.193333" y="0.193333" />
+                            <point x="0.5" y="0.0933333" />
+                            <point x="0.806667" y="0.193333" />
+                            <point x="0.88" y="0.5" />
+                            <point x="0.813333" y="0.813333" />
+                            <point x="0.5" y="0.873333" />
+                            <point x="0.18" y="0.82" />
+                            <point x="0.0933333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0266667" />
+                            <point x="0.84" y="0.16" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.5" y="0.98" />
+                            <point x="0.16" y="0.84" />
+                            <point x="0.0266667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.153333" y="0.153333" />
+                            <point x="0.5" y="0.0133333" />
+                            <point x="0.846667" y="0.153333" />
+                            <point x="0.993333" y="0.5" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.5" y="0.993333" />
+                            <point x="0.153333" y="0.846667" />
+                            <point x="0.0133333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Explosion.png">
+                        <collision-poly>
+                            <point x="0.153333" y="0.153333" />
+                            <point x="0.5" y="0.0133333" />
+                            <point x="0.846667" y="0.153333" />
+                            <point x="0.993333" y="0.5" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.5" y="0.993333" />
+                            <point x="0.153333" y="0.846667" />
+                            <point x="0.0133333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="8251239988143702">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="7933486270307906">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="3694414323688512">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5552506989862279" speed="5">
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5" original-source="C:\Users\Firerycon\Desktop\Bullet.png">
+                        <collision-poly>
+                            <point x="0.0618557" y="0.333333" />
+                            <point x="0.494845" y="0.277778" />
+                            <point x="0.927835" y="0.388889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.948454" y="0.722222" />
+                            <point x="0.494845" y="1" />
+                            <point x="0.0618557" y="0.666667" />
+                            <point x="0.0103093" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Plane" sid="328458549963837">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="5079551583568911">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="4423369877350085">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="7418157301465193">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2474464652473728" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.495833" original-source="C:\Users\Firerycon\Desktop\Plane.png">
+                        <image-point name="Imagepoint 1" x="0.904444" y="0.496667" />
+                        <collision-poly>
+                            <point x="0.0123457" y="0.0406504" />
+                            <point x="0.498765" y="0.154472" />
+                            <point x="0.807407" y="0.634146" />
+                            <point x="0.807407" y="0.495935" />
+                            <point x="0.923457" y="0.747967" />
+                            <point x="0.498765" y="0.829268" />
+                            <point x="0.0469136" y="0.845528" />
+                            <point x="0.777778" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="3944467734806151">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="2225124894457212">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Firerycon\Desktop\BG.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="2493093158816088">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Firerycon\Desktop\BG.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Mouse" uid="2" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
